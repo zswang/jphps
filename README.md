@@ -7,7 +7,7 @@ jphps
 function renderItem($item) {
   if (isset($item)) {
     <li>
-      <a href="#{$item['url']}">#{$item['title']}</a>
+      <a href="!#{$item['url']}">#{$item['title']}</a>
     </li>
   }
 }
@@ -21,7 +21,7 @@ renderItem(array('url' => 'http://google.com/', 'title' => 'Google'));
 <?php function renderItem($item) { ?>
 <?php   if (isset($item)) { ?>
     <li>
-      <a href="<?php echo htmlentities($item['url']) ?>"><?php echo htmlentities($item['title']) ?></a>
+      <a href="<?php echo $item['url'] ?>"><?php echo htmlentities($item['title']) ?></a>
     </li>
 <?php   } ?>
 <?php } ?>

@@ -32,7 +32,8 @@ renderItem(array('url' => 'http://www.baidu.com/', 'title' => '百度'));
 <ul>
 <?php renderItem(array('url' => 'http://google.com/', 'title' => 'Google')); ?>
 <?php renderItem(array('url' => 'http://www.baidu.com/', 'title' => '百度')); ?>
-</ul>```
+</ul>
+```
 
 ## 运行后
 

@@ -1,8 +1,7 @@
 jphps(<%>)
 -----
 
-[![Build Status](https://img.shields.io/travis/zswang/jphps/master.svg)](https://travis-ci.org/zswang/jphps)
-[![NPM version](https://img.shields.io/npm/v/jphps.svg)](http://badge.fury.io/js/jphps)
+# [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coverage-image]][coverage-url]
 
 ## 处理前
 
@@ -51,3 +50,14 @@ renderItem(array('url' => 'http://www.baidu.com/', 'title' => '百度'));
   </li>
 </ul>
 ```
+
+## License
+
+MIT © [zswang](http://weibo.com/zswang)
+
+[npm-url]: https://npmjs.org/package/jphps
+[npm-image]: https://badge.fury.io/js/jphps.svg
+[travis-url]: https://travis-ci.org/zswang/jphps
+[travis-image]: https://travis-ci.org/zswang/jphps.svg?branch=master
+[coverage-url]: https://coveralls.io/github/zswang/jphps?branch=master
+[coverage-image]: https://coveralls.io/repos/zswang/jphps/badge.svg?branch=master&service=github

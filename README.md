@@ -9,15 +9,9 @@ jphps(<%>)
 ```html
 function renderItem($item) {
   if (isset($item)) {
-<<<<<<< HEAD
-	<li>
-	  <a href="!#{$item['url']}">#{$item['title']}</a>
-	</li>
-=======
   <li>
     <a href="!#{$item['url']}">#{$item['title']}</a>
   </li>
->>>>>>> origin/master
   }
 }
 
@@ -32,15 +26,9 @@ renderItem(array('url' => 'http://www.baidu.com/', 'title' => '百度'));
 ```php
 <?php function renderItem($item) { ?>
 <?php   if (isset($item)) { ?>
-<<<<<<< HEAD
-	<li>
-	  <a href="<?php echo $item['url'] ?>"><?php echo htmlentities($item['title']) ?></a>
-	</li>
-=======
   <li>
     <a href="<?php echo $item['url'] ?>"><?php echo htmlentities($item['title']) ?></a>
   </li>
->>>>>>> origin/master
 <?php   } ?>
 <?php } ?>
 

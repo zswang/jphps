@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-  - 0.11
-  - 0.10
-script:
-  - npm run lint
-  - npm run test
+  - 0.12
+before_install:
+  - sudo add-apt-repository ppa:ondrej/php5-oldstable --yes
+  - sudo apt-get update -y
+  - sudo apt-get install php5 -y

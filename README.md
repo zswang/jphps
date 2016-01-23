@@ -1,14 +1,17 @@
-jphps
+jphps(<%>)
 -----
+
+[![Build Status](https://img.shields.io/travis/zswang/jphps/master.svg)](https://travis-ci.org/zswang/jphps)
+[![NPM version](https://img.shields.io/npm/v/jphps.svg)](http://badge.fury.io/js/jphps)
 
 ## 处理前
 
 ```html
 function renderItem($item) {
   if (isset($item)) {
-    <li>
-      <a href="!#{$item['url']}">#{$item['title']}</a>
-    </li>
+	<li>
+	  <a href="!#{$item['url']}">#{$item['title']}</a>
+	</li>
   }
 }
 
@@ -20,9 +23,9 @@ renderItem(array('url' => 'http://google.com/', 'title' => 'Google'));
 ```php
 <?php function renderItem($item) { ?>
 <?php   if (isset($item)) { ?>
-    <li>
-      <a href="<?php echo $item['url'] ?>"><?php echo htmlentities($item['title']) ?></a>
-    </li>
+	<li>
+	  <a href="<?php echo $item['url'] ?>"><?php echo htmlentities($item['title']) ?></a>
+	</li>
 <?php   } ?>
 <?php } ?>
 

@@ -164,7 +164,7 @@
           function (all, flag, value) {
             switch (flag) {
             case '#': // 需要转义，防止 XSS
-              return '<?php echo htmlentities(' + value + ') ?>';
+              return '<?php echo htmlspecialchars(' + value + ') ?>';
             case '!#': // 不需要转义
               return '<?php echo ' + value + ' ?>';
             }

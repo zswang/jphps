@@ -6,8 +6,8 @@
    * PHP and HTML alternate static template
    * @author
    *   zswang (http://weibo.com/zswang)
-   * @version 0.0.9
-   * @date 2016-01-26
+   * @version 0.0.11
+   * @date 2016-04-18
    */
   /**
    * 是否行是否输出
@@ -145,7 +145,7 @@
           function (all, flag, value) {
             switch (flag) {
             case '#': // 需要转义，防止 XSS
-              return '<?php echo htmlentities(' + value + ') ?>';
+              return '<?php echo htmlspecialchars(' + value + ') ?>';
             case '!#': // 不需要转义
               return '<?php echo ' + value + ' ?>';
             }

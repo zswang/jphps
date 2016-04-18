@@ -2,7 +2,7 @@
   "name": "jphps",
   "title": "jphps",
   "description": "PHP and HTML alternate static template",
-  "version": "0.0.9",
+  "version": "0.0.11",
   "homepage": "http://jphps.com/",
   "main": "jphps.js",
   "author": [

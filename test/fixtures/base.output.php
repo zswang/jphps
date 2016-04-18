@@ -1,7 +1,7 @@
 <?php function renderItem($item) {
   if (isset($item)) { ?>
   <li>
-    <a href="<?php echo $item['url'] ?>"><?php echo htmlentities($item['title']) ?></a>
+    <a href="<?php echo $item['url'] ?>"><?php echo htmlspecialchars($item['title']) ?></a>
   </li>
 <?php   }
 } ?>

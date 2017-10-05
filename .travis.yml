@@ -2,7 +2,6 @@ language: node_js
 node_js:
   - 4.1
 before_install:
-  - sudo add-apt-repository ppa:ondrej/php5-oldstable --yes
   - sudo apt-get update -y
   - sudo apt-get install php5 -y
 after_script:

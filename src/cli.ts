@@ -7,7 +7,6 @@
   const mkdirp = require('mkdirp')
   const fs = require('fs')
   const path = require('path')
-  const util = require('util')
   const colors = require('colors')
 
   let argv = optimist
@@ -60,7 +59,7 @@
   if (argv.output) {
     mkdirp(path.dirname(argv.output))
     fs.writeFileSync(argv.output, content)
-    console.log(colors.green(util.format('%j jphps output complete.', filenames)))
+    console.log(colors.green(`${filenames} jphps output complete.`))
   }
   else {
     console.log(content)

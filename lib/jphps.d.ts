@@ -4,8 +4,8 @@
  * PHP and HTML alternate static template
  * @author
  *   zswang (http://weibo.com/zswang)
- * @version 1.0.0
- * @date 2017-10-05
+ * @version 1.0.1
+ * @date 2017-11-08
  */
 /**
  * 是否行是否输出

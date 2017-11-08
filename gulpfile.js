@@ -15,7 +15,7 @@ const merge2 = require('merge2')
 const pkg = require('./package')
 
 gulp.task('build', function () {
-  var tsResult = gulp.src('src/*.ts')
+  var tsResult = gulp.src(`src/${pkg}.ts`)
     .pipe(jdists())
     .pipe(gulp.dest('lib'))
     .pipe(typescript({
@@ -66,4 +66,4 @@ gulp.task('cli', function () {
     .pipe(gulp.dest('lib'))
 })
 
-gulp.task('dist', ['build', 'example', 'uglify'])
+gulp.task('dist', ['build', 'cli', 'example', 'uglify'])

@@ -2,9 +2,10 @@
   "name": "jphps",
   "title": "jphps",
   "description": "PHP and HTML alternate static template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "http://jphps.com/",
   "main": "lib/jphps.js",
+  "typings": "lib/jphps.d.ts",
   "author": {
     "name": "zswang",
     "url": "http://weibo.com/zswang"

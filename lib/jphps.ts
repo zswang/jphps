@@ -4,8 +4,8 @@
  * PHP and HTML alternate static template
  * @author
  *   zswang (http://weibo.com/zswang)
- * @version 1.0.0
- * @date 2017-10-05
+ * @version 1.0.1
+ * @date 2017-11-08
  */
 /*<function name="jphps_isOutput">*/
 /**
@@ -133,7 +133,7 @@ function jphps_build(template: string): string {
   if (!template) {
     return template
   }
-  let lines = String(template).split(/\n\r?/).map(function (line, index, array) {
+  let lines = String(template).split(/\n\r?/).map((line, index, array) => {
     if (/^\s*$/.test(line)) {
       return line
     }
@@ -150,8 +150,7 @@ function jphps_build(template: string): string {
     }
     return '<?php ' + line + ' ?>'
   })
-  return lines.join('\n')
-    .replace(/ \?>(\s*)<\?php /g, '$1')
+  return lines.join('\n').replace(/ \?>(\s*)<\?php /g, '$1')
 } /*</function>*/
 export {
   jphps_isOutput as isOutput,

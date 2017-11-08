@@ -147,7 +147,7 @@ function jphps_build(template: string): string {
   if (!template) {
     return template
   }
-  let lines = String(template).split(/\n\r?/).map(function (line, index, array) {
+  let lines = String(template).split(/\n\r?/).map((line) => {
     if (/^\s*$/.test(line)) {
       return line
     }
@@ -164,10 +164,10 @@ function jphps_build(template: string): string {
         })
     }
 
-    return '<?php ' + line + ' ?>'
+    return `<?php ${line} ?>`
   })
-  return lines.join('\n')
-    .replace(/ \?>(\s*)<\?php /g, '$1')
+
+  return lines.join('\n').replace(/ \?>(\s*)<\?php /g, '$1')
 } /*</function>*/
 
 export {
